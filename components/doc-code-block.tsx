@@ -9,7 +9,7 @@ interface DocCodeBlockProps {
 
 export function DocCodeBlock({ children, className }: DocCodeBlockProps) {
   return (
-    <pre className={cn("bg-zinc-950 text-zinc-50 p-4 rounded-lg overflow-x-auto", className)}>
+    <pre className={cn("text-zinc-50 p-4 rounded-lg overflow-x-auto", className)}>
       <code>{children}</code>
     </pre>
   )
