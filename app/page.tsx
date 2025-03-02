@@ -28,7 +28,7 @@ export default function Home() {
             'url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Tritcoin_Banner.jpg-XAHjNd3lEFA5pFkfMIPDB7QkVkJazD.jpeg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-          z-index: -1;,
+          z-index: "-1",
         }}
       >
         <div className="absolute inset-0 bg-black/50">
