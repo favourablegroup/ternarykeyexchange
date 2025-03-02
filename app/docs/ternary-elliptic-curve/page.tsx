@@ -23,7 +23,7 @@ export default function TernaryEllipticCurveDocPage() {
           <AccordionTrigger>Core Components</AccordionTrigger>
           <AccordionContent>
             <h3 className="text-xl font-semibold mb-2">1. Curve Construction</h3>
-            <pre className="bg-gray-100 p-2 rounded mb-4">
+            <pre className="p-2 rounded mb-4">
               {`constructor(a, b, n) {
     this.field = new TernaryField(n);
     this.a = a;
@@ -38,7 +38,7 @@ export default function TernaryEllipticCurveDocPage() {
 
             <h3 className="text-xl font-semibold mb-2">2. Point Validation</h3>
             <h4 className="text-lg font-semibold mb-2">isOnCurve(point)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">
+            <pre className="p-2 rounded mb-4">
               {`isOnCurve(point) {
     if (point === null) return true; // Point at infinity
     const { x, y } = point;
@@ -55,7 +55,7 @@ export default function TernaryEllipticCurveDocPage() {
             <h3 className="text-xl font-semibold mb-2">3. Point Arithmetic</h3>
 
             <h4 className="text-lg font-semibold mb-2">Point Addition (addPoints)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`addPoints(P1, P2)`}</pre>
+            <pre className="p-2 rounded mb-4">{`addPoints(P1, P2)`}</pre>
             <ul className="list-disc list-inside mb-4">
               <li>Implements elliptic curve point addition</li>
               <li>Handles special cases (point at infinity, same x-coordinate)</li>
@@ -65,7 +65,7 @@ export default function TernaryEllipticCurveDocPage() {
             </ul>
 
             <h4 className="text-lg font-semibold mb-2">Point Doubling (doublePoint)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`doublePoint(P)`}</pre>
+            <pre className="p-2 rounded mb-4">{`doublePoint(P)`}</pre>
             <ul className="list-disc list-inside mb-4">
               <li>Optimized implementation for adding a point to itself</li>
               <li>Handles special cases (point at infinity, y=0)</li>
@@ -83,7 +83,7 @@ export default function TernaryEllipticCurveDocPage() {
             </ul>
 
             <h3 className="text-xl font-semibold mb-2">4. Key Generation</h3>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`generateKeyPair()`}</pre>
+            <pre className="p-2 rounded mb-4">{`generateKeyPair()`}</pre>
             <ul className="list-disc list-inside">
               <li>Creates private-public key pairs</li>
               <li>Uses secure random number generation</li>
@@ -170,13 +170,13 @@ export default function TernaryEllipticCurveDocPage() {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Usage Examples</h2>
         <h3 className="text-xl font-semibold mb-2">1. Key Generation</h3>
-        <pre className="bg-gray-100 p-2 rounded mb-4">
+        <pre className="p-2 rounded mb-4">
           {`const curve = new TernaryEllipticCurve(a, b, n);
 const { privateKey, publicKey } = curve.generateKeyPair();`}
         </pre>
 
         <h3 className="text-xl font-semibold mb-2">2. Point Operations</h3>
-        <pre className="bg-gray-100 p-2 rounded mb-4">
+        <pre className="p-2 rounded mb-4">
           {`// Point addition
 const sumPoint = curve.addPoints(point1, point2);
 
@@ -185,7 +185,7 @@ const resultPoint = curve.multiplyPoint(scalar, basePoint);`}
         </pre>
 
         <h3 className="text-xl font-semibold mb-2">3. Signature Creation</h3>
-        <pre className="bg-gray-100 p-2 rounded">
+        <pre className="p-2 rounded">
           {`function sign(message, privateKey) {
     const k = generateSecureRandom();
     const R = curve.multiplyPoint(k, curve.basePoint);
