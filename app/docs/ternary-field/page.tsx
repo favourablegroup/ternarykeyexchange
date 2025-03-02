@@ -53,7 +53,7 @@ export default function TernaryFieldDocPage() {
 
             <h3 className="text-xl font-semibold mb-2">3. Field Operations</h3>
             <h4 className="text-lg font-semibold mb-2">Addition (add)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`add(a, b)`}</pre>
+            <pre className="p-2 rounded mb-4">{`add(a, b)`}</pre>
             <ul className="list-disc list-inside mb-4">
               <li>Performs coefficient-wise addition modulo 3</li>
               <li>Converts inputs to polynomial form</li>
@@ -63,7 +63,7 @@ export default function TernaryFieldDocPage() {
             </ul>
 
             <h4 className="text-lg font-semibold mb-2">Multiplication (multiply)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`multiply(a, b)`}</pre>
+            <pre className="p-2 rounded mb-4">{`multiply(a, b)`}</pre>
             <ul className="list-disc list-inside mb-4">
               <li>Implements polynomial multiplication in GF(3^n)</li>
               <li>Converts inputs to polynomial form</li>
@@ -73,7 +73,7 @@ export default function TernaryFieldDocPage() {
             </ul>
 
             <h4 className="text-lg font-semibold mb-2">Inverse (inverse)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`inverse(a)`}</pre>
+            <pre className="p-2 rounded mb-4">{`inverse(a)`}</pre>
             <ul className="list-disc list-inside">
               <li>Finds multiplicative inverse using Extended Euclidean Algorithm</li>
               <li>Throws error for zero input (no inverse exists)</li>
@@ -179,7 +179,7 @@ const inv = field.inverse(5);`}
         </DocCodeBlock>
 
         <h3 className="text-xl font-semibold mb-2">Cryptographic Application</h3>
-        <pre className="bg-gray-100 p-2 rounded">
+        <pre className="p-2 rounded">
           {`// Generate key pair
 const privateKey = field.generateRandom();
 const publicKey = field.multiply(privateKey, generator);
