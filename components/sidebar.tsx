@@ -37,7 +37,7 @@ export function Sidebar() {
             <span className="sr-only">Toggle menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="left" className="w-[240px] sm:w-[400px]">
+        <SheetContent side="left" className="w-[300px] sm:w-[300px]">
           <SheetTitle className="text-lg font-semibold mb-4">Ternary Key Exchange</SheetTitle>
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
