@@ -14,7 +14,7 @@ export default function TernaryEllipticCurveDocPage() {
         </p>
         <h3 className="text-xl font-semibold mb-2">Curve Equation</h3>
         <p>The curve implements the equation:</p>
-        <pre className="bg-gray-100 p-2 rounded mb-2">y² + xy = x³ + ax² + b</pre>
+        <pre className="p-2 rounded mb-2">y² + xy = x³ + ax² + b</pre>
         <p>This is a special form of elliptic curve that's optimized for ternary field operations.</p>
       </section>
 
