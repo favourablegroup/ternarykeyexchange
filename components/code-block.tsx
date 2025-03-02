@@ -9,7 +9,7 @@ interface CodeBlockProps {
 export function CodeBlock({ language, code }: CodeBlockProps) {
   return (
     <div className="my-4 rounded-md overflow-hidden">
-      <SyntaxHighlighter language={language} style={atomDark}>
+      <SyntaxHighlighter language={language}>
         {code}
       </SyntaxHighlighter>
     </div>
