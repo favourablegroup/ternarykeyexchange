@@ -74,7 +74,7 @@ export default function TernaryEllipticCurveDocPage() {
             </ul>
 
             <h4 className="text-lg font-semibold mb-2">Scalar Multiplication (multiplyPoint)</h4>
-            <pre className="bg-gray-100 p-2 rounded mb-4">{`multiplyPoint(k, P)`}</pre>
+            <pre className="p-2 rounded mb-4">{`multiplyPoint(k, P)`}</pre>
             <ul className="list-disc list-inside mb-4">
               <li>Implements double-and-add algorithm</li>
               <li>Efficiently computes kP where k is a scalar</li>
